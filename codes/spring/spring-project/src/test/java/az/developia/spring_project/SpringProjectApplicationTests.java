@@ -1,10 +1,10 @@
-package az.devlopia.spring_project_2sentyabr;
+package az.developia.spring_project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringProject2sentyabrApplicationTests {
+class SpringProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
