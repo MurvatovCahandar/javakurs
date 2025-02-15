@@ -1,5 +1,8 @@
-package az.developia.spring_project;
+package az.developia.spring_project.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Book {
 private int id;
 private String name;
@@ -8,13 +11,7 @@ private int pageCount;
 
 
 
-public Book(int id, String name, int price, int pageCount) {
-	super();
-	this.id = id;
-	this.name = name;
-	this.price = price;
-	this.pageCount = pageCount;
-}
+
 public int getId() {
 	return id;
 }
@@ -23,6 +20,10 @@ public void setId(int id) {
 }
 public String getName() {
 	return name;
+}
+@Override
+public String toString() {
+	return "Book [id=" + id + ", name=" + name + ", price=" + price + ", pageCount=" + pageCount + "]";
 }
 public Book() {
 	this.id=3;
