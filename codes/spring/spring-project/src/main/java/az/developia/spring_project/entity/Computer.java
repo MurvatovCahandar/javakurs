@@ -2,6 +2,9 @@ package az.developia.spring_project.entity;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
 @Component
 public class Computer {
 private int id;
@@ -50,7 +53,17 @@ public Computer(int id, String brand, int price, String color) {
 	this.brand = brand;
 	this.price = price;
 	this.color = color;
+	
+	
+}
+@PostConstruct
+public void init() {
+	System.out.println("init method");
 }
 
+@PreDestroy
+public void destroy() {
+	System.out.println("destroy method");
+}
 
 }
