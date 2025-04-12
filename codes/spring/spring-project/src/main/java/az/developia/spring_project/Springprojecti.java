@@ -6,6 +6,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 
 import az.developia.spring_project.entity.Employee;
+import az.developia.spring_project.entity.Home;
 
 
 @SpringBootApplication
@@ -14,7 +15,7 @@ public class Springprojecti {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext  r=SpringApplication.run(Springprojectio.class, args);
 		
-		Employee bean=r.getBean(Employee.class);
+		Home bean=r.getBean(Home.class);
 		System.out.println(bean.getId());
 		
 		String[] beanDefinitionNames=r.getBeanDefinitionNames();
